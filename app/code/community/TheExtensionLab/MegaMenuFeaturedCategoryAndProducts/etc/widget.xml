@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<widgets>
+	<featured_category_products type="theextensionlab_megamenufeaturedcategoryandproducts/widget_category_product_list">
+        <name>MegaMenu - Featured Category Products</name>
+        <description>Add a featured product from within a certain category</description>
+        <parameters>
+            <title translate="label">
+                <visible>1</visible>
+                <label>Title</label>
+                <type>text</type>
+            </title>
+
+            <menu_featured_category_id>
+                <visible>1</visible>
+                <required>1</required>
+                <label>Category</label>
+                <type>label</type>
+                <helper_block>
+                    <type>theextensionlab_megamenu/adminhtml_catalog_category_widget_chooser</type>
+                    <data>
+                        <button translate="open">
+                            <open>Select Category...</open>
+                        </button>
+                    </data>
+                </helper_block>
+                <sort_order>20</sort_order>
+            </menu_featured_category_id>
+
+            <megamenu_featured_product_ids translate="label">
+                <visible>1</visible>
+                <required>1</required>
+                <label>Product</label>
+                <type>label</type>
+                <helper_block>
+                    <type>theextensionlab_megamenu/adminhtml_catalog_product_widget_chooser</type>
+                    <data>
+                        <button translate="open">
+                            <open>Select Product(s)...</open>
+                        </button>
+                    </data>
+                </helper_block>
+                <sort_order>10</sort_order>
+            </megamenu_featured_product_ids>
+
+            <display_on>
+                <required>0</required>
+                <visible>1</visible>
+                <label>Display On</label>
+                <type>multiselect</type>
+                <value>small,medium,large</value>
+                <source_model>theextensionlab_megamenu/config_source_display</source_model>
+            </display_on>
+
+            <template>
+                <required>1</required>
+                <visible>1</visible>
+                <label>Template</label>
+                <type>select</type>
+                <value>theextensionlab/megamenufeaturedcategoryandproducts/categories/products/list.phtml</value>
+                <values>
+                    <default translate="label">
+                        <value>theextensionlab/megamenu/categories/products/list.phtml</value>
+                        <label>Default Featured Product Template</label>
+                    </default>
+                </values>
+            </template>
+        </parameters>
+    </featured_category_products>
+</widgets>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<TheExtensionLab_MegaMenuFeaturedCategoryAndProducts>
+			<version>1.0.0</version>
+		</TheExtensionLab_MegaMenuFeaturedCategoryAndProducts>
+	</modules>
+
+	<global>
+		<blocks>
+			<theextensionlab_megamenufeaturedcategoryandproducts>
+				<class>TheExtensionLab_MegaMenuFeaturedCategoryAndProducts_Block</class>
+			</theextensionlab_megamenufeaturedcategoryandproducts>
+		</blocks>
+	</global>
+</config>

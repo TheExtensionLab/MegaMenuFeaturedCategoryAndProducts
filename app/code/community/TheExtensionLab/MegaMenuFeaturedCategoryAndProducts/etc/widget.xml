@@ -4,12 +4,7 @@
         <name>MegaMenu - Featured Category Products</name>
         <description>Add a featured product from within a certain category</description>
         <parameters>
-            <title translate="label">
-                <visible>1</visible>
-                <label>Title</label>
-                <type>text</type>
-            </title>
-
+            
             <menu_featured_category_id>
                 <visible>1</visible>
                 <required>1</required>
@@ -59,7 +54,7 @@
                 <value>theextensionlab/megamenufeaturedcategoryandproducts/categories/products/list.phtml</value>
                 <values>
                     <default translate="label">
-                        <value>theextensionlab/megamenu/categories/products/list.phtml</value>
+                        <value>theextensionlab/megamenufeaturedcategoryandproducts/categories/products/list.phtml</value>
                         <label>Default Featured Product Template</label>
                     </default>
                 </values>

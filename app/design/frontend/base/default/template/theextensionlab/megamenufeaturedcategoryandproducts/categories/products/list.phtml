@@ -15,7 +15,7 @@
     <ul>
 
     <?php if($this->getFeaturedCategoryNode()):?>
-    	<li class="section-title"><?php echo $this->getFeaturedCategoryNode()->getName();?></li>
+    	<li class="section-title"><a href="<?php echo $featuredCategoryNode->getUrl();?>"><?php echo $this->__('Shop %s', $this->getFeaturedCategoryNode()->getName());?></a></li>
 	<?php endif;?>
 
     <?php foreach ($featuredProductsCollection as $featuredProduct): ?>

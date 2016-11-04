@@ -14,8 +14,8 @@
 <div class="list-block megamenu-list-block megamenu-category-product-list-block <?php echo $this->getDisplayClass();?>">
     <ul>
 
-    <?php if($this->getFeaturedCategoryNode()):?>
-    	<li class="section-title"><a href="<?php echo $featuredCategoryNode->getUrl();?>"><?php echo $this->__('Shop %s', $this->getFeaturedCategoryNode()->getName());?></a></li>
+    <?php if($featuredCategoryNode = $this->getFeaturedCategoryNode()):?>
+    	<li class="section-title"><a href="<?php echo $featuredCategoryNode->getUrl();?>"><?php echo $this->__('Shop %s', $featuredCategoryNode->getName());?></a></li>
 	<?php endif;?>
 
     <?php foreach ($featuredProductsCollection as $featuredProduct): ?>
